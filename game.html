@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Text</title>
+    <title>Pra que título</title>
 </head>
 <body>
-    teste 
+
+    <div class ="conteudo">
+        <h1>Escreva seu nome:</h1>
+        <input type="text" id="nome" name="nome" placeholder="nome">
+        <input type="button" id="enviar" name="enviar" value="Enviar" onclick="salvamento('nome')">
+    </div>
+
+        <div class ="conteudo">
+            <h1>Escreva sua idade:</h1>
+            <input type="number" id="idade" name="idade" placeholder="idade">
+            <input type="button" id="enviar" name="enviar" value="Enviar" onclick="salvamento('idade')">
+        </div>
+
+        <div id="teste">teste1</div>
+        <div id="teste2">teste2</div>
+
+    <script>
+
+        function salvamento(infoteste, idade){
+            var nome = [document.getElementById(infoteste), document.getElementById()];
+            nome[0] = nome[0].value;
+            // var idade = document.getElementById(info2);
+            // var idade = (idade.value);
+            
+
+
+            var mudar = document.getElementById('teste');
+            var mudar2 = document.getElementById('teste2');
+            // mudar.innerHTML = `seu nome é ${nome}`;
+            // mudar2.innerHTML = `sua idade é ${idade}`;
+            mudar.innerHTML = `${nome[0]}`;
+            mudar2.innerHTML = `${infos[1]}`;
+            ocultar('conteudo');
+        }
+
+        // Ocultar e Mostrar
+        function ocultar(Obj){
+				var objId = document.getElementById(Obj).hidden = true;
+                var objClass = document.getElementsByClassName(Obj).hidden = true;
+			}
+			
+		function mostrar(Obj){
+				var objId = document.getElementById(Obj).hidden = false;
+                var objClass = document.getElementsByClassName(Obj).hidden = false;
+		}
+        // Ocultar e Mostrar
+
+
+    </script> 
 </body>
 </html>
